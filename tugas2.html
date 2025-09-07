@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form</title>
+    <style>
+        .header {
+            background-image: linear-gradient(to right, rgb(241, 204, 210) ); 
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif; color:rgb(177, 99, 112);
+            font-size: 38px;
+        }
+        .cici {
+          font-family: Arial, ; color:rgb(177, 99, 112);
+            font-size: 25px;   
+        }
+        .hm {
+            color: rgb(177, 99, 112);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>PERMINATAN <br> UKM <br>FASILKOM-TI</h2>
+     <form action="" method="post">
+        
+        <fieldset style="width: 450px; margin-top: 10px" class="header">
+            <legend class="cici"><b>Akun</b></legend>
+            <table>
+        <!--Baris Pertama untuk Inputan Username-->
+        <tr>
+            <td><label for="uname">Username</label></td>
+            <td><input type="text" id="uname" name="Username"</td> 
+        </tr>
+        <tr> 
+            <td><label for="Password">Password</label></td>
+            <td><input type="password" id="pass" name="Password" placeholder=" password minimal 8 karakter"></td>
+        </tr>
+        <tr>
+            <td><label for="Konfirmasi Password">Konfirmasi Password</label></td>
+            <td><input type="password" id="Konfirmasi Password" name="Konfirmasi Password"></td>
+        </tr>
+        </table>
+        </fieldset> 
+        </form> 
+    
+        <fieldset style="width: 450px; margin-top: 10px" class="header">
+        <legend class="cici"><b>Biodata</b></legend>
+        <table>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td><input type="text" id="nama" name="Nama Lengkap"></td>
+            </tr>
+            <tr>
+                <td><label for="nim"> NIM</label></td>
+                <td><input type="text" id="nama" name="NIM"></td>
+            </tr>
+            <tr>
+                <td><label for="jk"> Jenis Kelamin</label> <br></td>
+                <td><input type="radio" id="Laki-laki" name="jk">Laki-laki <br>
+                <input type="radio" id="Laki-laki" name="jk">Perempuan</td>
+            </tr>
+            <tr>
+                <td><label for="tgl">Tanggal Lahir</label></td>
+                <td><input type="date" id="tgl" name="tglLahir"><br></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>
+                   <textarea name="alamat" id="alamat" rows="4" cols="25"></textarea> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nomor telepon">Nomor Telepon</label></td>
+                <td><input type="number" id="nomor" name="Nomor Telepon"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>
+                    <select name="prodi" id="prodi">
+                        <option value="ilkom">Ilmu Komputer</option>
+                        <option value="ti">Teknologi Informasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pilihan UKM</td>
+                <td>
+                    <input type="checkbox" id="info" name="info"/> AIESEC <br>
+                    <input type="checkbox" id="info" name="info"/> MEPRO <br>
+                    <input type="checkbox" id="info" name="info"/> PANAHAN <br>
+                    <input type="checkbox" id="info" name="info"/> CATUR <br>
+                    <input type="checkbox" id="info" name="info"/> KARATE <br>
+                    <input type="checkbox" id="info" name="info"/> TAEKWONDO <br>
+                    <input type="checkbox" id="info" name="info"/> BOLA VOLI <br>
+                    <input type="checkbox" id="info" name="info"/> LPTQ <br>
+                    <input type="checkbox" id="info" name="info"/> PS ULOS <br>
+                    <input type="checkbox" id="info" name="info"/> FUTSAL <br>
+                    <input type="checkbox" id="info" name="info"/> BADMINTON <br>
+                    <input type="checkbox" id="info" name="info"/> KOMPAS <br>
+                    <input type="checkbox" id="info" name="info"/> INKUBATOR SAINS <br>
+                    <input type="checkbox" id="info" name="info"/> MENWA <br>
+                    <input type="checkbox" id="info" name="info"/> RELAWAN SAHIVA <br>
+                    <input type="checkbox" id="info" name="info"/> SRE <br>
+                    <input type="checkbox" id="info" name="info"/> SEPATU RODA <br>
+                    <input type="checkbox" id="info" name="info"/> SEPAK BOLA <br>
+                    <i>ket: boleh memilih lebih dari satu UKM <br><br>Harap memilih UKM dengan mencentang <br> pada kotak yang tersedia</i>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alasan">Alasan Memilih UKM</label></td>
+                <td>
+                   <textarea name="alasan" id="alasan" rows="6" cols="40"></textarea> 
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+        <button style="margin-left: 420px; margin-top: 15px;" type="submit" class="hm">Kirim</button>
+    </form>
+</body>
+
+
+</html>
